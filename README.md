@@ -42,7 +42,7 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 ### Links
 
 - Solution URL: [Repo](https://github.com/girldocode/fylo-lp-v1-fr-mentor)
-- Live Site URL: [Add live site URL here](https://fylo-lp-v1-fr-mentor.vercel.app/)
+- Live Site URL: [Demo](https://fylo-lp-v1-fr-mentor.vercel.app/)
 
 ## My process
 
