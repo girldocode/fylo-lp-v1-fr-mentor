@@ -1,0 +1,389 @@
+@import url('./utilities.css');
+@import url('./responsive.css');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+:root {
+    --Very-Dark-Blue: hsl(243, 87%, 12%);
+    --Desaturated-Blue: hsl(238, 22%, 44%);
+
+    --Bright-Blue: hsl(224, 93%, 58%);
+    --Moderate-Cyan: hsl(170, 45%, 43%);
+
+    --Light-Grayish-Blue: hsl(240, 75%, 98%);
+    --Light-Gray: hsl(0, 0%, 75%);
+}
+
+
+/*___________reset_____________ */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    overflow-wrap: break-word;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Raleway', sans-serif;
+}
+
+ol,
+ul,
+menu {
+    list-style: none;
+}
+
+a,
+button {
+    cursor: revert;
+}
+
+/* img {
+    max-width: 100%;
+    max-height: 100%;
+} */
+
+/*____________css___________*/
+/* html,
+body {
+    overflow-x: hidden;
+} */
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+
+
+
+/* ______attribution css_______*/
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+/* _________________________________*/
+
+ul a {
+    text-decoration: none;
+    margin-right: 1rem;
+    color: var(--Desaturated-Blue);
+}
+
+.navbar .list {}
+
+section.hero .hero-content {
+    width: 600px;
+    margin-top: 3rem;
+}
+
+section.hero {
+    padding-bottom: 12rem;
+}
+
+.hero-search input {
+    padding: 0.5rem;
+    padding-right: 4rem;
+    margin-right: 1rem;
+}
+
+.hero-search input::placeholder {
+    color: var(--Light-Gray);
+    font-size: 0.95rem;
+}
+
+.hero-search input:focus {
+    outline: none;
+}
+
+section.hero .hero-content p {
+    margin-bottom: 1.5rem;
+}
+
+section.hero .hero-illus img {
+    width: 600px;
+}
+
+/* __________ section 1__________ */
+section.description {
+    background-image: url('../images/bg-curve-desktop.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    padding-bottom: 8rem;
+}
+
+section.description .container {
+    padding-top: 10rem
+}
+
+section.description .description-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+
+section.description .description-content .description-para {
+    margin-bottom: 1rem;
+    width: 520px;
+    color: var(--Desaturated-Blue);
+}
+
+section.description .description-content article {
+    width: 520px;
+    margin-bottom: 1rem;
+    color: var(--Desaturated-Blue);
+}
+
+section.description .description-illus img {
+    width: 500px;
+}
+
+section.description .description-link {
+    margin-bottom: 0.25rem;
+}
+
+section.description .description-link span {
+    color: var(--Moderate-Cyan);
+}
+
+section.description .description-link img {
+    margin-top: 0.30rem;
+    margin-left: 8px;
+}
+
+.border {
+    width: 170px;
+}
+
+/* _____________card wrapper ______________*/
+
+section.description .wrapper {
+    box-shadow: 0px 0px 10px -5px rgba(64, 64, 64, 0.6);
+    margin-top: 4rem;
+    width: 400px;
+    border-radius: 8px;
+}
+
+section.description .wrapper .wrapper-content .wrapper-profile img {
+    width: 35px;
+    border-radius: 50%;
+    margin-right: 1rem;
+    margin-top: 5px;
+}
+
+section.description .wrapper .wrapper-content {
+    padding: 1.5rem 4rem;
+    padding-left: 2.5rem;
+}
+
+section.description .wrapper .wrapper-content .quote {
+    margin-bottom: 1rem;
+    max-width: 50%;
+}
+
+.wrapper-art {
+    font-weight: 400;
+    font-size: 0.85rem;
+    line-height: 1.9;
+    margin-bottom: 1.2rem;
+}
+
+section.description .wrapper .wrapper-content .wrapper-profile {
+    display: flex;
+}
+
+section.description .wrapper .wrapper-content .wrapper-profile .wrapper-profile-content h4 {
+    font-size: 0.75rem;
+    margin-top: 2px;
+}
+
+section.description .wrapper .wrapper-content .wrapper-profile .wrapper-profile-content span {
+    font-size: 0.65rem;
+}
+
+section.description .wrapper .wrapper-content .wrapper-profile .wrapper-profile-content {
+    margin-bottom: 1rem;
+}
+
+/* _____section 2________ */
+section.info {
+    background: var(--Desaturated-Blue);
+}
+
+section.info .info-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+section.info .info-wrapper .info-wrapper-content {
+    width: 500px;
+}
+
+section.info .info-wrapper .info-wrapper-content h2 {
+    color: white;
+    padding-bottom: 1rem;
+}
+
+section.info .info-wrapper .info-wrapper-content p {
+    color: white;
+    padding-bottom: 5rem;
+}
+
+section.info .info-wrapper .info-wrapper-form {
+    display: flex;
+    flex-direction: column;
+    /* margin-right: 5rem; */
+}
+
+section.info .info-wrapper .info-wrapper-form .btn-primary {
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+section.info .info-wrapper .info-wrapper-form button {
+    font-size: 0.75rem;
+}
+
+section.info .info-wrapper .info-wrapper-form .btn {}
+
+section.info .info-wrapper .info-wrapper-form input {
+    padding: 0.5rem;
+    padding-right: 12rem;
+    padding-left: 1rem;
+    border-radius: 3px;
+    border: none;
+    margin-bottom: 1rem;
+}
+
+section.info .info-wrapper .info-wrapper-form input::placeholder {
+    color: var(--Light-Gray);
+    font-size: 0.95rem;
+}
+
+section.info .info-wrapper .info-wrapper-form input:focus {
+    outline: none;
+}
+
+/* _______footer________- */
+footer.ftr {
+    background: var(--Very-Dark-Blue);
+}
+
+footer.ftr .container {
+    padding-top: 10rem;
+    padding-bottom: 6rem;
+}
+
+footer.ftr .ftr-image {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+/* part 1 */
+
+.call p {
+    color: white;
+    margin-left: 1rem;
+}
+
+.call {
+    margin-bottom: 2rem;
+}
+
+.email p {
+    color: white;
+    margin-left: 1rem;
+}
+
+.email {
+    margin-bottom: 2rem;
+}
+
+/* part 2 */
+
+.part ul a li {
+    color: white;
+    list-style: none;
+}
+
+.part ul a:hover {
+    text-decoration: underline;
+    color: aliceblue;
+}
+
+.part ul a {
+    text-decoration: none;
+}
+
+/*_________part__________ 3 */
+.social div {
+    border: 1px solid white;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+    padding: 7px;
+}
+
+footer.ftr .social div {
+    margin-right: 2rem;
+}
+
+.social svg path {
+    color: white;
+}
+
+.social div:hover svg path {
+    fill: var(--dark);
+    transition: all 0.5s ease-in-out;
+}
+
+.social div:hover {
+    background-color: white;
+}
+
+/* attribution */
+.attribution {
+    color: white;
+    font-size: 0.95rem;
+    text-align: center;
+}
+
+.attribution a {
+    color: white;
+}
